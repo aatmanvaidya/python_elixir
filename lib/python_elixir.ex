@@ -1,18 +1,18 @@
 defmodule PythonElixir do
-  @moduledoc """
-  Documentation for `PythonElixir`.
-  """
+  def sum_array do
+    numbers = [1, 2, 3]
 
-  @doc """
-  Hello world.
+    {result, _globals} =
+      Pythonx.eval(
+        """
+        import numpy as np
+        arr = np.array(x)
+        sum_result = np.sum(arr)
+        int(sum_result)  # Convert to native Python int
+        """,
+        %{"x" => numbers}
+      )
 
-  ## Examples
-
-      iex> PythonElixir.hello()
-      :world
-
-  """
-  def hello do
-    :world
+    Pythonx.decode(result)
   end
 end

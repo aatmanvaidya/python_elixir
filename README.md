@@ -1,6 +1,16 @@
 # PythonElixir
 
-**TODO: Add description**
+1. create exlir app
+```sh
+mix new python_elixir
+cd python_elixir
+```
+
+2. install packages
+```sh
+mix deps.get
+mix deps.compile
+```
 
 ## Installation
 
