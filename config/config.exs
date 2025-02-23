@@ -5,8 +5,10 @@ config :pythonx, :uv_init,
   [project]
   name = "project"
   version = "0.0.0"
-  requires-python = ">=3.10"
+  requires-python = "==3.10.*"
   dependencies = [
-    "numpy==2.2.3"
+    "feluda==0.9.2",
+    "feluda-dimension-reduction==0.1.2",
+    "matplotlib==3.10.0"
   ]
   """

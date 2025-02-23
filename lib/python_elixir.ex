@@ -8,7 +8,7 @@ defmodule PythonElixir do
         import numpy as np
         arr = np.array(x)
         sum_result = np.sum(arr)
-        int(sum_result)  # Convert to native Python int
+        int(sum_result)
         """,
         %{"x" => numbers}
       )

@@ -11,6 +11,9 @@ cd python_elixir
 mix deps.get
 mix deps.compile
 ```
+```sh
+rm -rf _build deps .elixir_ls && mix deps.get && mix compile
+```
 
 ## Installation
 

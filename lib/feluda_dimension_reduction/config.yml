@@ -1,0 +1,6 @@
+operators:
+  label: "Operators"
+  parameters:
+    - name: "Dimension Reduction"
+      type: "dimension_reduction"
+      parameters: { index_name: "video" }
